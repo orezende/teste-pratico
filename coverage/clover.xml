@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1594348684004" clover="3.2.0">
-  <project timestamp="1594348684004" name="All files">
-    <metrics statements="33" coveredstatements="33" conditionals="6" coveredconditionals="6" methods="14" coveredmethods="14" elements="53" coveredelements="53" complexity="0" loc="33" ncloc="33" packages="2" files="2" classes="2"/>
+<coverage generated="1594414829037" clover="3.2.0">
+  <project timestamp="1594414829037" name="All files">
+    <metrics statements="63" coveredstatements="63" conditionals="10" coveredconditionals="10" methods="27" coveredmethods="27" elements="100" coveredelements="100" complexity="0" loc="63" ncloc="63" packages="3" files="4" classes="4"/>
     <package name="models">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="Car.ts" path="/mnt/d/personal/teste-pratico/src/models/Car.ts">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="Car.ts" path="D:\personal\teste-pratico\src\models\Car.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -15,10 +15,19 @@
         <line num="16" count="15" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
       </file>
+      <file name="Driver.ts" path="D:\personal\teste-pratico\src\models\Driver.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="10" count="16" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+      </file>
     </package>
     <package name="repositories.Car">
       <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
-      <file name="index.ts" path="/mnt/d/personal/teste-pratico/src/repositories/Car/index.ts">
+      <file name="index.ts" path="D:\personal\teste-pratico\src\repositories\Car\index.ts">
         <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="12" coveredmethods="12"/>
         <line num="1" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
@@ -45,6 +54,36 @@
         <line num="62" count="1" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="repositories.Driver">
+      <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
+      <file name="index.ts" path="D:\personal\teste-pratico\src\repositories\Driver\index.ts">
+        <metrics statements="24" coveredstatements="24" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="18" count="16" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="52" count="4" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
       </file>
     </package>
   </project>
