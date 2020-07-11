@@ -100,8 +100,6 @@ describe('Create Rent Service context', () => {
       motivo: 'rodar em aplicativo',
     });
 
-    const rentsFound = rentRepository.find();
-
     expect(() => {
       createRentService.execute({
         carId: carToRent,
@@ -110,6 +108,8 @@ describe('Create Rent Service context', () => {
         motivo: 'rodar em aplicativo',
       });
     }).toThrow('Motorista já tem um carro alugado');
+
+    const rentsFound = rentRepository.find();
 
     expect(rentsFound.length).toBe(1);
   });
