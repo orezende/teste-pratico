@@ -62,4 +62,30 @@ describe('Rent a car context', () => {
     expect(rentFinalized.id).toBe(rentId);
     expect(rentFinalized.dataTermino).not.toBe(undefined);
   });
+
+  it('Should be able to list all rents', () => {
+    expect.hasAssertions();
+    const carRepository = new CarRepository();
+    const driverRepository = new DriverRepository();
+    const rentRepository = new RentRepository();
+
+    const { id: carId } = carRepository.create({
+      cor: 'azul',
+      marca: 'honda',
+      placa: 'abc-1213',
+    });
+
+    const { id: driverId } = driverRepository.create('joao');
+
+    rentRepository.create({
+      dataInicio: new Date(),
+      driverId,
+      carId,
+      motivo: 'Rodar em aplicativo',
+    });
+
+    const allRents = rentRepository.find();
+
+    expect(allRents.length).toBe(1);
+  });
 });

@@ -34,4 +34,8 @@ export default class RentRepository {
 
     return this.rents[FoundRentIndex];
   }
+
+  public find(): Array<Rent> {
+    return this.rents;
+  }
 }
