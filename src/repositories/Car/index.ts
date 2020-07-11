@@ -43,9 +43,9 @@ export default class CarRepository {
   }
 
   public findById(carId: string): Car {
-    const carIndexFounded = this.cars.findIndex(car => car.id === carId);
+    const carIndexFound = this.cars.findIndex(car => car.id === carId);
 
-    return this.cars[carIndexFounded];
+    return this.cars[carIndexFound];
   }
 
   public remove(carId: string): void {

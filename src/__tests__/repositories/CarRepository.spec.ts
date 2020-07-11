@@ -96,9 +96,9 @@ describe('Repository Car Context', () => {
       cor: 'preto',
     });
 
-    const carFounded = carRepository.findById(id);
+    const carFound = carRepository.findById(id);
 
-    expect(carFounded).toMatchObject({
+    expect(carFound).toMatchObject({
       id,
       placa: 'abc-1234',
       marca: 'fiat',

@@ -49,10 +49,10 @@ describe('Driver Repositor Context', () => {
     driverRepository.create('Jamito 2');
     const { id } = driverRepository.create('João Vitor 2');
 
-    const driverFounded = driverRepository.findById(id);
+    const driverFound = driverRepository.findById(id);
 
-    expect(driverFounded).toHaveProperty('id');
-    expect(driverFounded.nome).toBe('João Vitor 2');
+    expect(driverFound).toHaveProperty('id');
+    expect(driverFound.nome).toBe('João Vitor 2');
   });
 
   it('Should be able to update driver', () => {
@@ -79,13 +79,13 @@ describe('Driver Repositor Context', () => {
 
     driverRepository.remove(id);
 
-    const driversFounded = driverRepository.find();
+    const driversFound = driverRepository.find();
 
-    const driverWasExcluded = driversFounded.findIndex(
+    const driverWasExcluded = driversFound.findIndex(
       driver => driver.id === id,
     );
 
-    expect(driversFounded.length).toBe(3);
+    expect(driversFound.length).toBe(3);
     expect(driverWasExcluded).toBe(-1);
   });
 });

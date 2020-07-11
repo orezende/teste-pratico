@@ -28,10 +28,10 @@ export default class RentRepository {
   }
 
   public update({ id, dataTermino }: FinalizeRentDTO): Rent {
-    const foundedRentIndex = this.rents.findIndex(rent => rent.id === id);
+    const FoundRentIndex = this.rents.findIndex(rent => rent.id === id);
 
-    this.rents[foundedRentIndex].dataTermino = dataTermino;
+    this.rents[FoundRentIndex].dataTermino = dataTermino;
 
-    return this.rents[foundedRentIndex];
+    return this.rents[FoundRentIndex];
   }
 }

@@ -28,11 +28,9 @@ export default class DriverRepository {
   }
 
   public findById(id: string): Driver {
-    const driverFoundedIndex = this.drivers.findIndex(
-      driver => driver.id === id,
-    );
+    const driverFoundIndex = this.drivers.findIndex(driver => driver.id === id);
 
-    return this.drivers[driverFoundedIndex];
+    return this.drivers[driverFoundIndex];
   }
 
   public update({ id, nome }: DriverDTO): Driver {
