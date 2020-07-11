@@ -31,7 +31,7 @@ describe('Car Controller context', () => {
     const response = await request(app).get('/car');
 
     expect(response.status).toBe(200);
-    expect(response.body.cars.length).toBe(2);
+    expect(response.body.cars.length).toBeGreaterThan(1);
   });
   it('Should be able to list all cars filted by color,  brand and license', async () => {
     expect.hasAssertions();

@@ -1,81 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1594486376171" clover="3.2.0">
-  <project timestamp="1594486376172" name="All files">
-    <metrics statements="148" coveredstatements="148" conditionals="36" coveredconditionals="36" methods="48" coveredmethods="48" elements="232" coveredelements="232" complexity="0" loc="148" ncloc="148" packages="8" files="11" classes="11"/>
+<coverage generated="1594499018626" clover="3.2.0">
+  <project timestamp="1594499018627" name="All files">
+    <metrics statements="175" coveredstatements="175" conditionals="42" coveredconditionals="42" methods="52" coveredmethods="52" elements="269" coveredelements="269" complexity="0" loc="175" ncloc="175" packages="8" files="12" classes="12"/>
     <package name="src">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.ts" path="D:\personal\teste-pratico\src\app.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="32" coveredstatements="32" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4"/>
+      <metrics statements="59" coveredstatements="59" conditionals="20" coveredconditionals="20" methods="8" coveredmethods="8"/>
       <file name="CarController.ts" path="D:\personal\teste-pratico\src\controllers\CarController.ts">
         <metrics statements="27" coveredstatements="27" conditionals="14" coveredconditionals="14" methods="4" coveredmethods="4"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
         <line num="12" count="5" type="stmt"/>
         <line num="14" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="15" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="20" count="3" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
         <line num="30" count="8" type="stmt"/>
         <line num="32" count="8" type="stmt"/>
         <line num="38" count="6" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
         <line num="53" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+      </file>
+      <file name="DriverController.ts" path="D:\personal\teste-pratico\src\controllers\DriverController.ts">
+        <metrics statements="25" coveredstatements="25" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="26" count="7" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
       </file>
       <file name="index.ts" path="D:\personal\teste-pratico\src\controllers\index.ts">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.models">
       <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="Car.ts" path="D:\personal\teste-pratico\src\models\Car.ts">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
         <line num="12" count="33" type="stmt"/>
         <line num="13" count="33" type="stmt"/>
         <line num="14" count="33" type="stmt"/>
         <line num="15" count="33" type="stmt"/>
         <line num="16" count="33" type="stmt"/>
-        <line num="18" count="5" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
       </file>
       <file name="Driver.ts" path="D:\personal\teste-pratico\src\models\Driver.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="8" count="23" type="stmt"/>
-        <line num="9" count="23" type="stmt"/>
-        <line num="10" count="23" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="3" count="5" type="stmt"/>
+        <line num="8" count="30" type="stmt"/>
+        <line num="9" count="30" type="stmt"/>
+        <line num="10" count="30" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
       </file>
       <file name="Rent.ts" path="D:\personal\teste-pratico\src\models\Rent.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
@@ -94,9 +124,9 @@
       <metrics statements="28" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="13" coveredmethods="13"/>
       <file name="index.ts" path="D:\personal\teste-pratico\src\repositories\Car\index.ts">
         <metrics statements="28" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="13" coveredmethods="13"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="20" count="18" type="stmt"/>
+        <line num="1" count="6" type="stmt"/>
+        <line num="16" count="6" type="stmt"/>
+        <line num="20" count="19" type="stmt"/>
         <line num="23" count="33" type="stmt"/>
         <line num="24" count="33" type="stmt"/>
         <line num="30" count="33" type="stmt"/>
@@ -110,47 +140,47 @@
         <line num="44" count="22" type="cond" truecount="2" falsecount="0"/>
         <line num="45" count="23" type="stmt"/>
         <line num="48" count="22" type="stmt"/>
-        <line num="51" count="5" type="stmt"/>
+        <line num="51" count="6" type="stmt"/>
         <line num="52" count="10" type="stmt"/>
         <line num="54" count="3" type="stmt"/>
-        <line num="57" count="5" type="stmt"/>
+        <line num="57" count="6" type="stmt"/>
         <line num="58" count="7" type="stmt"/>
         <line num="60" count="2" type="stmt"/>
-        <line num="63" count="5" type="stmt"/>
+        <line num="63" count="6" type="stmt"/>
         <line num="64" count="6" type="stmt"/>
         <line num="66" count="2" type="stmt"/>
         <line num="68" count="2" type="stmt"/>
         <line num="75" count="2" type="stmt"/>
-        <line num="77" count="5" type="stmt"/>
+        <line num="77" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories.Driver">
       <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
       <file name="index.ts" path="D:\personal\teste-pratico\src\repositories\Driver\index.ts">
         <metrics statements="23" coveredstatements="23" conditionals="4" coveredconditionals="4" methods="11" coveredmethods="11"/>
-        <line num="1" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="12" count="12" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="16" count="23" type="stmt"/>
-        <line num="18" count="23" type="stmt"/>
-        <line num="20" count="23" type="stmt"/>
-        <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="24" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="4" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="30" count="3" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="49" count="3" type="stmt"/>
-        <line num="50" count="4" type="stmt"/>
-        <line num="52" count="1" type="stmt"/>
-        <line num="54" count="3" type="stmt"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="30" type="stmt"/>
+        <line num="18" count="30" type="stmt"/>
+        <line num="20" count="30" type="stmt"/>
+        <line num="23" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="8" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="31" count="19" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="7" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="49" count="5" type="stmt"/>
+        <line num="50" count="10" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="54" count="5" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories.Rent">
@@ -177,14 +207,14 @@
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="CreateCarService.ts" path="D:\personal\teste-pratico\src\services\Car\CreateCarService.ts">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="14" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
         <line num="17" count="11" type="stmt"/>
         <line num="18" count="11" type="stmt"/>
         <line num="20" count="11" type="cond" truecount="2" falsecount="0"/>
         <line num="21" count="3" type="stmt"/>
         <line num="24" count="8" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
       </file>
     </package>
     <package name="src.services.Rent">

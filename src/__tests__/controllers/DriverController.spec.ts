@@ -1,5 +1,4 @@
 import request from 'supertest';
-import { isUuid } from 'uuidv4';
 import app from '../../app';
 import Driver from '../../models/Driver';
 
@@ -29,7 +28,7 @@ describe('driver Controller context', () => {
     expect(response.status).toBe(200);
     expect(response.body.drivers.length).toBeGreaterThan(1);
   });
-  it('Should be able to list all drivers filted by name', async () => {
+  it('Should be able to list all drivers filtered by name', async () => {
     expect.hasAssertions();
 
     const driverCreated = await request(app).post('/driver').send({
@@ -38,7 +37,9 @@ describe('driver Controller context', () => {
 
     const { id: driverId } = driverCreated.body.driver;
 
-    const response = await request(app).get('/driver');
+    const response = await request(app).get('/driver').query({
+      nome: 'Joao',
+    });
 
     const { drivers } = response.body;
 
