@@ -15,6 +15,12 @@ export default class CreateCarService {
   }
 
   public execute({ placa, cor, marca }: Request): Car {
+    const carAlreadyCreated = this.carRepository.find({ placa });
+
+    if (carAlreadyCreated.length !== 0) {
+      throw Error('Placa de carro já cadastrada');
+    }
+
     return this.carRepository.create({
       cor,
       marca,

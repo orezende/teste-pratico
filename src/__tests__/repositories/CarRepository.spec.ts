@@ -155,6 +155,33 @@ describe('Repository Car Context', () => {
     expect(cars.length).toBe(2);
   });
 
+  it('should be able to find cary by license', () => {
+    expect.hasAssertions();
+    const carRepository = new CarRepository();
+
+    carRepository.create({
+      placa: 'aaa-0000',
+      cor: 'amarelo',
+      marca: 'fiat',
+    });
+
+    carRepository.create({
+      placa: 'aaa-1234',
+      cor: 'amarelo',
+      marca: 'honda',
+    });
+
+    const { id: carId } = carRepository.create({
+      placa: 'abc-1234',
+      cor: 'verde',
+      marca: 'wolksvagem',
+    });
+
+    const [car] = carRepository.find({ placa: 'abc-1234' });
+
+    expect(car.id).toBe(carId);
+  });
+
   it('should be able to find car by brand and color', () => {
     expect.hasAssertions();
     const carRepository = new CarRepository();

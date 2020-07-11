@@ -10,6 +10,7 @@ interface CarDTO {
 interface FilterCarDTO {
   cor?: string;
   marca?: string;
+  placa?: string;
 }
 
 export default class CarRepository {
@@ -31,15 +32,20 @@ export default class CarRepository {
     return car;
   }
 
-  public find({ marca, cor }: FilterCarDTO = {}): Array<Car> {
+  public find({ marca, cor, placa }: FilterCarDTO = {}): Array<Car> {
+    let { cars } = this;
+
     if (marca) {
-      return this.cars.filter(car => car.marca === marca);
+      cars = cars.filter(car => car.marca === marca);
     }
     if (cor) {
-      return this.cars.filter(car => car.cor === cor);
+      cars = cars.filter(car => car.cor === cor);
+    }
+    if (placa) {
+      cars = cars.filter(car => car.placa === placa);
     }
 
-    return this.cars;
+    return cars;
   }
 
   public findById(carId: string): Car {
