@@ -3,6 +3,7 @@ import DriverRepository from '../../repositories/Driver';
 
 describe('Driver Repositor Context', () => {
   it('Should be able to create a driver', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     const driverCreated = driverRepository.create('João Vitor');
@@ -12,6 +13,7 @@ describe('Driver Repositor Context', () => {
   });
 
   it('Should be able to list a drivers', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     driverRepository.create('João Vitor');
@@ -24,6 +26,7 @@ describe('Driver Repositor Context', () => {
   });
 
   it('Should be able to list a drivers filtered by name', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     driverRepository.create('João Vitor');
@@ -39,6 +42,7 @@ describe('Driver Repositor Context', () => {
   });
 
   it('Should be able to find driver by id', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     driverRepository.create('Jamito');
@@ -52,6 +56,7 @@ describe('Driver Repositor Context', () => {
   });
 
   it('Should be able to update driver', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     const { id } = driverRepository.create('João Vitor');
@@ -64,6 +69,7 @@ describe('Driver Repositor Context', () => {
   });
 
   it('Should be able to remove a driver', () => {
+    expect.hasAssertions();
     const driverRepository = new DriverRepository();
 
     driverRepository.create('João Vitor');

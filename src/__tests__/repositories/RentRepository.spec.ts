@@ -6,6 +6,7 @@ import DriverRepository from '../../repositories/Driver';
 
 describe('Rent a car context', () => {
   it('Should be able to rent a car', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
     const driverRepository = new DriverRepository();
     const rentRepository = new RentRepository();
@@ -33,6 +34,7 @@ describe('Rent a car context', () => {
   });
 
   it('should be able to finalize a rent', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
     const driverRepository = new DriverRepository();
     const rentRepository = new RentRepository();

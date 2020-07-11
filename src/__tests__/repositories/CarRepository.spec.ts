@@ -3,6 +3,7 @@ import CarRepository from '../../repositories/Car';
 
 describe('Repository Car Context', () => {
   it('should be able to insert a car', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     const carCreated = carRepository.create({
@@ -16,6 +17,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to list all cars', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     carRepository.create({
@@ -36,6 +38,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to remove a car', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     carRepository.create({
@@ -59,6 +62,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to update car values', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     const { id } = carRepository.create({
@@ -83,6 +87,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to find car by id', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     const { id } = carRepository.create({
@@ -102,6 +107,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to find car by brand', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     carRepository.create({
@@ -123,6 +129,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to find car by color', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     carRepository.create({
@@ -149,6 +156,7 @@ describe('Repository Car Context', () => {
   });
 
   it('should be able to find car by brand and color', () => {
+    expect.hasAssertions();
     const carRepository = new CarRepository();
 
     carRepository.create({
