@@ -1,9 +1,11 @@
 import { Router } from 'express';
+import CarController from './CarController';
+import DriverController from './DriverController';
 
 const routes = Router();
 
-routes.use('/car');
-routes.use('/driver');
-routes.use('/rent');
+routes.use('/car', CarController);
+routes.use('/driver', DriverController);
+// routes.use('/rent');
 
 export default routes;
