@@ -3,12 +3,12 @@ import { Router, Request, Response } from 'express';
 import RentRepository from '../repositories/Rent';
 import CreateRentService from '../services/Rent/CreateRentService';
 
-const carController = Router();
+const rentController = Router();
 
 const rentRepository = new RentRepository();
 const createRentService = new CreateRentService(rentRepository);
 
-carController.post('/', (request: Request, response: Response) => {
+rentController.post('/', (request: Request, response: Response) => {
   try {
     const { driverId, carId, dataInicio, motivo } = request.body;
 
@@ -25,4 +25,17 @@ carController.post('/', (request: Request, response: Response) => {
   }
 });
 
-export default carController;
+rentController.get('/', (request: Request, response: Response) => {
+  const rents = rentRepository.find();
+
+  return response.json({ rents });
+});
+
+rentController.put('/', (request: Request, response: Response) => {
+  const { id } = request.body;
+
+  const rentFinalized = rentRepository.update({ id, dataTermino: new Date() });
+
+  return response.json({ rent: rentFinalized });
+});
+export default rentController;
