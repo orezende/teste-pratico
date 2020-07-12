@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev:server": "ts-node-dev --inspect --ignore-watch node_modules src/server.ts",
-    "test": "jest --watch",
+    "test:watch": "jest --watch",
+    "test": "jest",
     "coverage": "jest --coverage"
   },
   "dependencies": {
